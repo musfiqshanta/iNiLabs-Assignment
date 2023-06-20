@@ -1,0 +1,27 @@
+name: ini_labs
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+  dio: ^5.2.1+1
+  font_awesome_flutter: ^10.4.0
+  intl: ^0.17.0
+  webview_flutter: ^4.2.2
+  path_provider: ^2.0.15
+  shared_preferences: ^2.1.2
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
