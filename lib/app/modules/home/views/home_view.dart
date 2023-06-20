@@ -22,6 +22,7 @@ class HomeView extends GetView<HomeController> {
 
           leading: IconButton(
               onPressed: () {
+                authcontroller.page.value = 1;
                 Get.back();
               },
               icon: Icon(Icons.arrow_back)),
@@ -277,7 +278,6 @@ class HomeView extends GetView<HomeController> {
                     SizedBox(
                       height: 15,
                     ),
-            
                     authcontroller.page.value <= 1
                         ? TextButton(
                             onPressed: () {
@@ -301,7 +301,7 @@ class HomeView extends GetView<HomeController> {
                                     "Prev",
                                     style: TextStyle(fontSize: 22),
                                   )),
-                              authcontroller.itemLength.value <= 30
+                              authcontroller.itemLength.value < 30
                                   ? Visibility(
                                       visible: false, child: Text("Nothing"))
                                   : TextButton(

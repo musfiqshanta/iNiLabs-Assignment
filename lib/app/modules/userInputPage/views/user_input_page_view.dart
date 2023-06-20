@@ -89,7 +89,7 @@ class UserInputPageView extends GetView<UserInputPageController> {
                   controller.name.value = controller.textController.text;
                   authController.getUserData(controller.textController.text);
                   authController.getUserrepo(
-                      controller.textController.text,"", "", "");
+                      controller.textController.text, "", "", "name");
 
                   controller.textController.clear();
                 },
